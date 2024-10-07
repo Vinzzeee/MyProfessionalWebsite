@@ -20,6 +20,7 @@ body {
     background-image: url(../img/electronic-circuit-boardcomputer-circuit-boardelectronic-circuit-board-with-processor_593400-9817.avif);
     background-repeat: repeat;
     background-size: cover;
+    overflow-x: hidden;
   }
 
   .nav-item {
