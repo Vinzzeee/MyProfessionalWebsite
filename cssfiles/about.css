@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Navbar Styles */
+.nav-item {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.navbar-brand {
+  font-size: 18px;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+section h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section p, section ul {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-left: 0; /* Removed left margin for better alignment */
+  margin-right: 0; /* Removed right margin for better alignment */
+  text-align: justify;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section:hover {
+  transform: translateY(-10px) scale(1.02); /* Adjusted for subtle effect */
+  background-color: #f0f0f0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+section:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+section:nth-child(2) {
+  animation-delay: 1s;
+}
+
+section:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+/* Image Styles */
+.about-image {
+  width: auto;
+  height: 500px; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.mission-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-width: 300px; /* Limit max width */
+  margin: 20px auto 0; /* Center the image */
+  display: block;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  #about {
+      background: rgba(54, 163, 226, 0.1); /* Lighter background for better readability */
+      padding: 20px;
+      margin-top: 20px;
+  }
+
+  #mission {
+      background: rgba(151, 5, 139, 0.1);
+      padding: 20px;
+      margin-top: 30px;
+  }
+
+  #skills {
+      background: rgba(54, 163, 226, 0.1);
+      padding: 20px;
+      margin-top: 30px;
+  }
+
+  
+}
+
+/* Hover Effects */
+section:hover {
+  transform: translateY(-10px) scale(1.02);
+  background-color: #e9ecef;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+

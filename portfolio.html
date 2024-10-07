@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="cssfiles/portfolio.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Professional Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-user"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content flex-grow-1">
+    <div class="main-content">
+        <section id="portfolio" class="fade-in">
+            <div class="projects glass-container">
+                <h3>Projects/Works</h3>
+                <div class="project-item">
+                    <h4>Snippets of my past online and in-field works</h4>
+                    <div class="scroll-container">
+                        <div class="container">
+                            <img src="img/3.jpg" alt="Proj1 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                        <div class="container">
+                            <img src="img/2.jpg" alt="Proj2 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                        <div class="container">
+                            <img src="img/1.jpg" alt="Proj3 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                        <div class="container">
+                            <img src="img/6.jpg" alt="Proj4 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                        <div class="container">
+                            <img src="img/7.jpg" alt="Proj5 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                        <div class="container">
+                            <img src="img/8.jpg" alt="Proj6 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                        <div class="container">
+                            <img src="img/4.jpg" alt="Proj7 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                        <div class="container">
+                            <img src="img/5.jpg" alt="Proj8 Image" class="portfolio-image" onclick="openModal(this)">
+                        </div>
+                    </div>
+                    <p class="projdes">
+                        <strong>Real Estate Virtual Assistant</strong><br>
+                        As a Real Estate Virtual Assistant, I provided comprehensive support to a real estate professional by managing a variety of tasks. My responsibilities included conducting email marketing campaigns, handling pre-construction details, and creating visually engaging infographics. I ensured the smooth execution of day-to-day operations, allowing my client to focus on sales and client relations, ultimately contributing to the growth of their business.
+                        <br><br>
+                        <strong>Community Manager at HYVE.works</strong><br>
+                        In my role as Community Manager at HYVE.works, I am responsible for fostering a vibrant and engaged community. I manage communication channels, moderate discussions, and create content that resonates with our audience. My goal is to cultivate a sense of belonging among members, encourage active participation, and ensure that our community thrives by addressing concerns, organizing events, and driving engagement.
+                        <br><br>
+                        <strong>IT Intern at DCCCO Multipurpose Cooperative</strong><br>
+                        During my internship at DCCCO Multipurpose Cooperative, I played a key role in maintaining and enhancing the cooperative’s IT systems and network. My duties involved troubleshooting technical issues, assisting in the implementation of new technologies, and ensuring the seamless operation of IT infrastructure. This hands-on experience provided me with valuable insights into IT management and allowed me to contribute to the organization's technological advancement.
+                    </p>
+                </div>
+            </div>
+            <div class="case-studies glass-container fade-in">
+                <h3>MOVs</h3>
+                <div class="image-grid">
+                    <img src="img/455899903_1226456725204739_8796762627049478735_n.jpg" alt="Mov1 Image" class="mov1-image" onclick="openModal(this)">           
+                    <img src="img/457374746_1334361674208048_5887583284747039451_n.jpg" alt="Mov2 Image" class="mov2-image" onclick="openModal(this)">          
+                    <img src="img/457298205_1001490598327306_8575745633700196241_n.jpg" alt="Mov3 Image" class="mov3-image" onclick="openModal(this)">               
+                    <img src="img/455825815_1010755377466552_8079650477526103354_n.jpg" alt="Mov4 Image" class="mov4-image" onclick="openModal(this)">
+                    <img src="img/455262492_522265376968775_3628513889654524865_n.jpg" alt="Mov5 Image" class="mov5-image" onclick="openModal(this)">
+                    <img src="img/417073079_911067860269461_4199494088679136609_n.jpg" alt="Mov6 Image" class="mov6-image" onclick="openModal(this)">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+    
+    <script>
+        function openModal(element) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = element.src;
+            captionText.innerHTML = element.alt;
+        }
+    
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-4">
+    <div class="container">
+        <p class="mb-0">© Copyright 2024</p>
+    </div>
+</footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.nav-item {
+  padding: 0px 20px;
+  font-size: 14px;
+
+}
+
+.navbar-brand{
+  font-size: 18px;
+}
+
+.home-section {
+  background-color: skyblue; /* Set the background color */
+  background-image: url(../img/Screenshot_2024-07-13_225828-removebg-preview.png); /* Background image */
+  background-size: 50%;
+  background-position: center;
+  background-repeat: repeat; /* Ensure the image does not repeat */
+  height: auto; /* Set the height */
+}
+
+.tagline-box {
+ 
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Glass effect */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.tagline-box h1 {
+  text-align: left;
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ff6f61; /* Text color */
+  background: linear-gradient(45deg, #e9dd05, #f3225d); /* Gradient background */
+  background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Fill text with background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
+  letter-spacing: 0.05em; /* Letter spacing */
+  padding: 10px; /* Padding */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Ensure padding and background apply only to text */
+}
+
+.profile-photo {
+  position: relative;
+}
+
+.profile-photo img {
+  position: relative;
+  width: 380px;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text {
+  font-size: 1.2em;
+  margin-top: 30px;
+  color: #333;
+}
+
+.glass-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  margin-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes animate-image {
+  0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(1);
+}
+}
+
+.bottom-image { 
+  position: relative;
+  max-width: 500px; /* Adjust image size */
+  margin-left: 2px;
+  animation: animate-image 3s infinite; 
+}
+
+h2 {
+  position: relative;
+  font-size: 23px; /* Adjust font size */
+  color: #333; /* Adjust text color */
+  text-align: justify;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 10px;
+  margin-right: 50px;
+}
